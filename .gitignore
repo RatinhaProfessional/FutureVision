@@ -1,0 +1,6 @@
+config.env
+.env
+.env.development
+.env.test
+package-lock.json
+node_modules
