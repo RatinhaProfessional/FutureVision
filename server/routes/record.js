@@ -38,7 +38,7 @@ const router = express.Router();
 // Get all records
 router.get("/", async (req, res) => {
   try {
-    let collection = db.collection("Products"); // Use correct collection
+    let collection = db.collection("products"); // Use correct collection
     let results = await collection.find({}).toArray();
     res.status(200).send(results); // Status first, then send
   } catch (err) {
@@ -49,7 +49,7 @@ router.get("/", async (req, res) => {
 // Get a record by ID
 router.get("/:id", async (req, res) => {
   try {
-    let collection = db.collection("Products"); // Use correct collection
+    let collection = db.collection("products"); // Use correct collection
     let query = { _id: new ObjectId(req.params.id) };
     let result = await collection.findOne(query);
 
