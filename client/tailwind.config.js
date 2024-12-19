@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        header: ['"Bona Nova"', 'serif'], // Font for headers
-        paragraph: ['"Space Grotesk"', 'serif'], // Font for paragraphs
+        header: ['"Bona Nova"', 'serif'],  // Apply Google font to headers
+        paragraph: ['"Space Grotesk"', 'sans-serif'],  // Apply Google font to paragraphs
       },
     },
   },
