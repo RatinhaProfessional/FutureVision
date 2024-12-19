@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        header: ['"Bona Nova"', 'serif'], // Font for headers
+        paragraph: ['"Space Grotesk"', 'serif'], // Font for paragraphs
+      },
+    },
   },
   plugins: [],
 }

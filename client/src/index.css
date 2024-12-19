@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@300..700&display=swap');
+
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-header; /* Apply 'Bona Nova' for headers */
+    }
+  
+    p {
+      @apply font-paragraph; /* Apply 'Space Grotesk' for paragraphs */
+    }
+  }
