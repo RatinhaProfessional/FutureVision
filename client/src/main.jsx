@@ -6,17 +6,18 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import "./index.css";
+import Navbar from "./components/Navbar";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    // children: [
-    //   {
-    //     path: "/",
-    //     // element: <Navbar />,
-    //   },
-    // ],
+    children: [
+      {
+        path: "/",
+        element: <Navbar />,
+      },
+    ],
   },
 ]);
 
