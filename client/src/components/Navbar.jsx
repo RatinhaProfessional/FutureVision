@@ -18,6 +18,7 @@ export default function Navbar() {
         <NavLink to="/">
           <FontAwesomeIcon icon={faUser} />
         </NavLink>
+        
         <NavLink to="/">
           <FontAwesomeIcon icon={faShoppingBag} />
         </NavLink>

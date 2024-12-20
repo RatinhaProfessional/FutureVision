@@ -1,20 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import Navbar from "./components/Navbar"
+// import { Outlet } from "react-router-dom";
+// import Navbar from "./components/Navbar"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
       <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <main>
-          
+          <h1> hello please kill me </h1>
         </main>
+        {/* < Outlet /> */}
       </div>
-    </>
-  )
+  );
 }
-
-export default App
