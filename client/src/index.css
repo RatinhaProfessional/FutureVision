@@ -17,3 +17,7 @@
     @apply font-paragraph;
   }
 }
+
+html {
+  @apply text-slate-100;
+}
