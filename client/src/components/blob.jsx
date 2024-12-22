@@ -30,7 +30,7 @@ const Blob = () => {
 
     return <mesh 
       ref={mesh} 
-      scale={2} 
+      scale={1.3} 
       position={[0, 0, 0]} 
       onPointerEnter={() => (hover.current = true)} 
       onPointerLeave={() => (hover.current = false)} >

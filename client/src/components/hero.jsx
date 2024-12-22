@@ -7,7 +7,7 @@ export default function Hero() {
             <p className="text-end text-2xl">Redefining Sunglasses,<br/> 
             One Bold Spark at a Time.</p>
             <div class="row-span-2 flex justify-center items-center">
-                <div className="relative w-full h-full">
+                <div className="absolute w-full h-full overflow-visible">
                     <Canvas camera={{ position: [0.0, 0.0, 8.0]}}>
                         <Blob />
                     </Canvas>

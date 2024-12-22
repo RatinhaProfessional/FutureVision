@@ -7,7 +7,7 @@ varying float vDisplacement;
 
 void main() {
     vec3 color1 = vec3(0.451, 0.090, 0.086); // #731716
-    vec3 color2 = vec3(0.165, 0.349, 0.349); // #2A5959
+    vec3 color2 = vec3(0.749, 0.263, 0.141); // #BF4324
     vec3 color3 = vec3(0.820, 0.306, 0.294); // #D14E4B
 
     float distort = 2.0 * vDisplacement * u_intensity * sin(vUv.y * 10.0 + u_time);
