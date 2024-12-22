@@ -7,6 +7,9 @@ import {
 import App from "./App";
 import "./index.css";
 import Hero from "./components/hero";
+import ContentTable from "./components/contentTable";
+import NewIn from "./components/newIn";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,8 +17,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Hero />,
-        
+        element: (
+          <>
+            <Hero />
+            <ContentTable />
+            <NewIn />
+          </>
+        ),
       },
     ],
   },

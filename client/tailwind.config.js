@@ -10,6 +10,9 @@ export default {
         header: ['"Bona Nova"', 'serif'],  // Apply Google font to headers
         paragraph: ['"Space Grotesk"', 'sans-serif'],  // Apply Google font to paragraphs
       },
+      colors: {
+        'light-green' : '#378C84',
+      },
     },
   },
   plugins: [],

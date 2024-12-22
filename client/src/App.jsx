@@ -3,9 +3,8 @@ import Navbar from "./components/Navbar"
 
 export default function App() {
   return (
-      <div className="h-screen bg-stone-950">
+      <div>
         <Navbar />
-        <div className="vertical-line"></div>
         <Outlet />
         {/* <Footer /> */}
       </div>
