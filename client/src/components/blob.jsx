@@ -28,9 +28,14 @@ const Blob = () => {
           }
     });
 
-    return <mesh ref={mesh} scale={1.5} position={[0, 0, 0]} onPointOver={() => (hover.current = true)} onPointerOut={() => (hover.current = false)}>
+    return <mesh 
+      ref={mesh} 
+      scale={2} 
+      position={[0, 0, 0]} 
+      onPointerEnter={() => (hover.current = true)} 
+      onPointerLeave={() => (hover.current = false)} >
         <icosahedronGeometry args={[2, 20]} />
-        <shaderMaterial vertexShader={vertexShader} fragmentShader={fragmentShader} uniforms={uniforms} />
+        <shaderMaterial vertexShader={vertexShader} fragmentShader={fragmentShader} uniforms={uniforms} transparent={true} />
     </mesh>
 
 }

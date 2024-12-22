@@ -14,6 +14,8 @@ void main() {
     vec3 colorA = mix(color1, color2, vUv.x * (1.0 - distort));
     vec3 finalColor = mix(colorA, color3, vUv.y * (1.0 - distort));
 
+    float alpha = 0.5 + 0.5 * sin(u_time * 0.5 + vDisplacement);
+
     gl_FragColor = vec4(finalColor, 1.0);
 }
 `;
