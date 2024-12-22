@@ -7,7 +7,6 @@ import {
 import App from "./App";
 import "./index.css";
 import Hero from "./components/hero";
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -16,6 +15,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Hero />,
+        
       },
     ],
   },
