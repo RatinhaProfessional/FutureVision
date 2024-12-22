@@ -5,7 +5,9 @@ export default function App() {
   return (
       <div className="h-screen bg-stone-950">
         <Navbar />
-        < Outlet />
+        <div className="vertical-line"></div>
+        <Outlet />
+        {/* <Footer /> */}
       </div>
   );
 }
