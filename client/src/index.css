@@ -41,8 +41,21 @@ html {
   position: absolute;
   margin-left: 3.123rem;
   width: 2px;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(180deg, #f2f2f2, #2a5959, #bf4324, #731716);
   background-size: 200% 200%;
   animation: pulse 4s ease-in-out infinite;
+}
+
+.horizontal-gradient {
+  background: linear-gradient(90deg, #2a5959, #bf4324, #731716);
+  background-size: 200% 200%;
+  animation: pulse 4s ease-in-out infinite;
+}
+.arrow-link {
+  left: 0;
+  width: 16.5rem;
+  height: 1px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid #f2f2f2;
 }

@@ -12,6 +12,8 @@ export default {
       },
       colors: {
         'light-green' : '#378C84',
+        'pink' : '#D14E4B',
+        'orange' : '#BF4324',
       },
     },
   },

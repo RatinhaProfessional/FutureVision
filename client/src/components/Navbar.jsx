@@ -5,7 +5,7 @@ import { faUser, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
   return (
-    <nav className="flex flex-row flex-nowrap items-center mx-[3.125rem] py-5 z-[20] sticky top-0 bg-stone-950">
+    <nav className="flex flex-row flex-nowrap items-center px-[3.125rem] py-5 z-[20] sticky top-0 bg-stone-950">
       <NavLink to="/" className="basis-1/3">
         <Logo />
       </NavLink>

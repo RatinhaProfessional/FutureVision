@@ -9,6 +9,8 @@ import "./index.css";
 import Hero from "./components/hero";
 import ContentTable from "./components/contentTable";
 import NewIn from "./components/newIn";
+import FrameLab from "./components/FrameLab";
+import OurVision from "./components/OurVision";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,8 @@ const router = createBrowserRouter([
             <Hero />
             <ContentTable />
             <NewIn />
+            <FrameLab />
+            <OurVision />
           </>
         ),
       },
