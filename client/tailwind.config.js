@@ -14,6 +14,8 @@ export default {
         'light-green' : '#378C84',
         'pink' : '#D14E4B',
         'orange' : '#BF4324',
+        'grey' : '#202020',
+        'light-grey' : '#9A9A9A',
       },
     },
   },

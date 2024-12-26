@@ -8,7 +8,7 @@ export default function OurVision() {
     <section className="mt-28">
       <p className="font-paragraph ml-16 text-orange">Our Vision</p>
       <div className="grid grid-rows-1 grid-cols-2 gap-10 mt-28">
-        <div className="ml-52 ">
+        <div className="ml-52">
           <h2 className="text-4xl font-header">Our Vision, Your Style</h2>
           <p className=" font-paragraph mt-5 text-justify">
             At Future Vision, we believe that style should be a reflection of
