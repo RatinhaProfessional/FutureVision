@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import NewInText from "../assets/NewInText.png";
 import NewInMain from "../assets/NewInMain.jpg";
@@ -5,6 +6,24 @@ import NewIn1 from "../assets/NewIn1.jpg";
 import NewIn2 from "../assets/NewIn2.jpg";
 
 export default function NewIn() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("http://localhost:5050/products/NewIn");
+        if (!response.ok) {
+          throw new Error("Failed to fetch products");
+        }
+        const data = await response.json();
+        setProducts(data);
+      } catch (err) {
+        console.error("Error fetching products:", err);
+      }
+    };
+
+    fetchProducts();
+  }, []);
   return (
     <section className="mt-28">
       <p className="font-paragraph ml-16 text-light-green">New In</p>
@@ -37,10 +56,28 @@ export default function NewIn() {
           <img src={NewIn2} alt="" className="object-cover w-full h-full" />
         </div>
         <div className="h-48">
-          <p className="font-paragraph">huahos</p>
+          {products[0] ? (
+            <>
+              <p className="font-paragraph font-bold">{products[0].productName}</p>
+              <p className="font-paragraph mt-5">
+                {products[0].productPrice}
+              </p>
+            </>
+          ) : (
+            <p className="font-paragraph">Loading first product...</p>
+          )}
         </div>
         <div className="h-48">
-          <p className="font-paragraph">huahos</p>
+        {products[1] ? (
+            <>
+              <p className="font-paragraph font-bold">{products[1].productName}</p>
+              <p className="font-paragraph mt-5">
+                {products[1].productPrice}
+              </p>
+            </>
+          ) : (
+            <p className="font-paragraph">Loading first product...</p>
+          )}
         </div>
       </div>
       <div className="mt-12 text-end hover:font-bold">
