@@ -52,10 +52,44 @@ html {
   background-size: 200% 200%;
   animation: pulse 4s ease-in-out infinite;
 }
-.arrow-link {
+
+.link-with-underline {
+  position: relative;
+  text-decoration: none;
+  transition: font-weight 0.5s ease;
+}
+
+.link-with-underline::after {
+  content: "";
+  position: absolute;
   left: 0;
-  width: 16.5rem;
+  bottom: -1.25rem;
+  width: 12.5rem;
   height: 1px;
-  transition: all 0.3s ease;
-  border-bottom: 2px solid #f2f2f2;
+  background: #f2f2f2;
+  background-size: 200% 200%;
+  transition: width 0.3s ease-in-out;
+}
+
+.link-with-underline:hover {
+  font-weight: 700;
+}
+
+.link-with-underline:hover::after {
+  width: 16.5rem;
+}
+
+.underline {
+  position: relative;
+  text-decoration: none;
+}
+
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1.25rem;
+  width: 25rem;
+  height: 1px;
+  background: #f2f2f2;
 }

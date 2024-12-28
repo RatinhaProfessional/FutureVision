@@ -25,6 +25,7 @@ const router = createBrowserRouter([
             <ContentTable />
             <NewIn />
             <FrameLab />
+            
             <OurVision />
           </>
         ),

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function FrameLab() {
   return (
-    <section className="mt-28">
+    <section className="mt-28" id="frame-lab">
       <p className="font-paragraph ml-16 text-pink">FrameLab</p>
       <div className="justify-items-end">
         <h2 className="text-4xl font-header mr-[3.125rem]">
@@ -15,11 +15,10 @@ export default function FrameLab() {
           a bold statement, our customizer lets you create pieces that are as
           individual as you are.
         </p>
-        <div className="mt-12 text-end hover:font-bold">
-          <Link to="/" className="mr-52">
+        <div className="mt-12 text-end hover:font-bold relative">
+          <Link to="/" className="mr-52 link-with-underline">
             Start Forging
           </Link>
-          <div className="arrow-link justify-self-end mt-5 mr-[3.125rem]"></div>
         </div>
       </div>
       <div className="mx-5"></div>

@@ -25,7 +25,7 @@ export default function NewIn() {
     fetchProducts();
   }, []);
   return (
-    <section className="mt-28">
+    <section className="mt-28" id="new-in">
       <p className="font-paragraph ml-16 text-light-green">New In</p>
       <div className="grid grid-rows-3 grid-cols-3 grid-rows-[8rem_23rem_5rem] gap-5 mx-52 mt-28">
         <div className="row-span-3 object-cover w-full h-full relative">
@@ -80,11 +80,10 @@ export default function NewIn() {
           )}
         </div>
       </div>
-      <div className="mt-12 text-end hover:font-bold">
-        <Link to="/" className="mr-52">
+      <div className="mt-12 text-end hover:font-bold relative">
+        <Link to="/" className="mr-52 link-with-underline">
           Discover more
         </Link>
-        <div className="arrow-link justify-self-end mt-5 mr-[3.125rem]"></div>
       </div>
     </section>
   );

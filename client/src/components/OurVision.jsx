@@ -5,7 +5,7 @@ import NewIn2 from "../assets/NewIn2.jpg";
 
 export default function OurVision() {
   return (
-    <section className="mt-28">
+    <section className="mt-28" id="our-vision">
       <p className="font-paragraph ml-16 text-orange">Our Vision</p>
       <div className="grid grid-rows-1 grid-cols-2 gap-10 mt-28">
         <div className="ml-52">
@@ -46,11 +46,10 @@ export default function OurVision() {
           </div>
         </div>
       </div>
-      <div className="mt-12 text-end hover:font-bold">
-        <Link to="/" className="mr-[9.31rem]">
+      <div className="mt-12 text-end hover:font-bold relative">
+        <Link to="/" className="mr-[9.31rem] link-with-underline">
           Get to know us better
         </Link>
-        <div className="arrow-link justify-self-end mt-5 mr-[3.125rem]"></div>
       </div>
     </section>
   );

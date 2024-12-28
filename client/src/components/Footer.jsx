@@ -30,7 +30,7 @@ export default function Footer() {
             exclusive offers, and limited-time deals. Stay ahead with Future
             Vision!
           </p>
-          <form className="flex flex-row flex-nowrap mt-5">
+          <form className="flex flex-row flex-nowrap mt-5 underline">
             <input
               type="email"
               value="Email address"
@@ -38,7 +38,7 @@ export default function Footer() {
               className="bg-transparent font-paragraph text-light-grey basis-2/3"
               required
             />
-            <button type="submit" className="uppercase basis-1/3">Subscribe</button>
+            <button type="submit" className="self-end uppercase basis-1/3">Subscribe</button>
           </form>
         </div>
       </div>
