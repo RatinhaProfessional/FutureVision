@@ -30,19 +30,19 @@ export default function NewIn() {
       <div className="grid grid-rows-3 grid-cols-3 grid-rows-[8rem_23rem_5rem] gap-5 mx-52 mt-28">
         <div className="row-span-3 object-cover w-full h-full relative">
           <img
-            className="animate-spin absolute top-0 right-0"
+            className="animate-spin slow-spin absolute top-[-5rem] right-[-5rem] z-0 w-36 h-36"
             src={NewInText}
             alt="New In spin animation"
           />
           <img
             src={NewInMain}
             alt="New Glasses image"
-            className="object-cover w-full h-full"
+            className="object-cover absolute w-full h-full z-20"
           />
         </div>
-        <div className="row-span-1 col-span-2 text-end">
-          <h2 className="text-4xl font-header">The New Era</h2>
-          <p className="font-paragraph text-justify mt-5">
+        <div className="row-span-1 col-span-2 justify-items-end">
+          <h2 className="text-4xl font-header text-end">The New Era</h2>
+          <p className="font-paragraph text-justify mt-5 w-[40rem]">
             Step into the future with our latest innovation: smart glasses.
             Blend technology with sleek design, for those who demand both style
             and substance. Discover a new way to see the world—smarter, sharper,

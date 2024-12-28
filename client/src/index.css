@@ -37,6 +37,19 @@ html {
   }
 }
 
+@keyframes slow-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.slow-spin {
+  animation: slow-spin 6s linear infinite;
+}
+
 .vertical-line {
   position: absolute;
   margin-left: 3.123rem;
