@@ -11,7 +11,7 @@ export default function NewIn() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("http://localhost:5050/products/NewIn");
+        const response = await fetch("https://futurevision.onrender.com/products/NewIn");
         if (!response.ok) {
           throw new Error("Failed to fetch products");
         }
