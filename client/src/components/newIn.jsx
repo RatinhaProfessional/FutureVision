@@ -58,22 +58,22 @@ export default function NewIn() {
         <div className="h-48">
           {products[0] ? (
             <>
-              <p className="font-paragraph font-bold">{products[0].productName}</p>
-              <p className="font-paragraph mt-5">
-                {products[0].productPrice}
+              <p className="font-paragraph font-bold">
+                {products[0].productName}
               </p>
+              <p className="font-paragraph mt-5">{products[0].productPrice}</p>
             </>
           ) : (
             <p className="font-paragraph">Loading first product...</p>
           )}
         </div>
         <div className="h-48">
-        {products[1] ? (
+          {products[1] ? (
             <>
-              <p className="font-paragraph font-bold">{products[1].productName}</p>
-              <p className="font-paragraph mt-5">
-                {products[1].productPrice}
+              <p className="font-paragraph font-bold">
+                {products[1].productName}
               </p>
+              <p className="font-paragraph mt-5">{products[1].productPrice}</p>
             </>
           ) : (
             <p className="font-paragraph">Loading first product...</p>

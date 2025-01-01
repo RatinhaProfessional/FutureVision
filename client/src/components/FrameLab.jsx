@@ -4,8 +4,8 @@ export default function FrameLab() {
   return (
     <section className="mt-28" id="frame-lab">
       <p className="font-paragraph ml-16 text-pink">FrameLab</p>
-      <div className="justify-items-end">
-        <h2 className="text-4xl font-header mr-[3.125rem]">
+      <div className="justify-items-end w-auto">
+        <h2 className="text-4xl text-end font-header mr-[3.125rem]">
           Forge your own Vision
         </h2>
         <p className="text-justify font-paragraph w-[37.06rem] mt-5 mr-[3.125rem]">

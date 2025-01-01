@@ -9,10 +9,14 @@ const ContentTable = () => {
           <p className="cursor-pointer font-header font-paragraph">New in</p>
         </Link>
         <Link to="frame-lab" smooth={true} duration={500}>
-          <p className="cursor-pointer font-header font-paragraph mt-5">Frame Lab</p>
+          <p className="cursor-pointer font-header font-paragraph mt-5">
+            Frame Lab
+          </p>
         </Link>
         <Link to="our-vision" smooth={true} duration={500}>
-          <p className="cursor-pointer font-header font-paragraph mt-5">Our Vision</p>
+          <p className="cursor-pointer font-header font-paragraph mt-5">
+            Our Vision
+          </p>
         </Link>
       </div>
     </article>

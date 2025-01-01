@@ -5,9 +5,9 @@ uniform float u_time;
 varying vec2 vUv;
 varying float vDisplacement;
 
-// Classic Perlin 3D Noise 
-// by Stefan Gustavson
-//
+// Code supplied from How to create awesome 3D blob animation with React Three Fiber | React & Three.js. tutorial
+// Classic Perlin 3D Noise by Stefan Gustavson
+
 vec4 permute(vec4 x) {
     return mod(((x*34.0)+1.0)*x, 289.0);
 }

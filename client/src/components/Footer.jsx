@@ -15,7 +15,7 @@ export default function Footer() {
   const handleMouseEnter = (event) => {
     const rect = event.target.getBoundingClientRect();
     setLinePosition(rect.left);
-    setLineWidth(rect.width); 
+    setLineWidth(rect.width);
   };
 
   const handleMouseLeave = () => {
@@ -35,16 +35,36 @@ export default function Footer() {
               transition: "left 0.3s ease, width 0.3s ease",
             }}
           />
-          <Link to="/" className="mb-5 ml-52" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <Link
+            to="/"
+            className="mb-5 ml-52"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             Products
           </Link>
-          <Link to="/" className="mb-5 ml-52" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <Link
+            to="/"
+            className="mb-5 ml-52"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             About US
           </Link>
-          <Link to="/" className="mb-5 ml-52" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <Link
+            to="/"
+            className="mb-5 ml-52"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             Contact
           </Link>
-          <Link to="/" className="ml-52" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          <Link
+            to="/"
+            className="ml-52"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
             Customer Service
           </Link>
         </div>
