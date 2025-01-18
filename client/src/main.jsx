@@ -11,6 +11,7 @@ import OurVision from "./components/OurVision";
 import ContentTableTwo from "./components/contentTable2";
 import Products from "./components/products";
 import ProductsIntro from "./components/productsIntro";
+import Register from "./components/register";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,21 @@ const router = createBrowserRouter([
             <ContentTableTwo />
             <NewIn />
             <Products />
+          </>
+        ),
+      },
+      {
+        path: "login",
+        element: (
+          <>
+          </>
+        ),
+      },
+      {
+        path: "register",
+        element: (
+          <>
+            <Register />
           </>
         ),
       },
