@@ -7,8 +7,8 @@
  assignment to request headers.
 */
 
-const Joi = require("joi");
-const jwt = require("jsonwebtoken");
+import Joi from "joi";  
+import jwt from "jsonwebtoken";
 
 
 //registration validation
@@ -51,4 +51,4 @@ const jwtValidation = (req, res, next) => {
     }
 }
 
-module.exports = {regValidation, logValidation, jwtValidation};
+export { regValidation, logValidation, jwtValidation };
