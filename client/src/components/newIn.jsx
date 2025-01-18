@@ -37,7 +37,7 @@ export default function NewIn() {
           <img
             src={NewInMain}
             alt="New Glasses image"
-            className="object-cover absolute w-full h-full z-20"
+            className="object-cover absolute w-full h-full z-10"
           />
         </div>
         <div className="row-span-1 col-span-2 justify-items-end">

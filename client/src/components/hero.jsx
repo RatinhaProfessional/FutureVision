@@ -16,12 +16,12 @@ export default function Hero() {
           </Canvas>
         </div>
       </div>
-      <h1 className="text-5xl uppercase z-40">
+      <h1 className="text-5xl uppercase z-10">
         Wear the
         <br />
         future
       </h1>
-      <h1 className="text-5xl text-end uppercase z-40">
+      <h1 className="text-5xl text-end uppercase z-10">
         Embrace your
         <br />
         essence

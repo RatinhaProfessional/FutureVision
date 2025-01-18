@@ -36,7 +36,7 @@ export default function Footer() {
             }}
           />
           <Link
-            to="/"
+            to="products"
             className="mb-5 ml-52"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}

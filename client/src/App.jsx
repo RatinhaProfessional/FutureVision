@@ -6,8 +6,8 @@ import ScrollToTop from "./components/ScrollToTop";
 export default function App() {
 
   return (
-    <div>
-      <main>
+    <div className="no-scrollbar">
+      <main >
         <Navbar />
         <Outlet />
         <Footer />

@@ -10,7 +10,7 @@ export default function Navbar() {
         <Logo />
       </NavLink>
       <div className="basis-1/3 flex justify-center">
-        <NavLink to="/">Products</NavLink>
+        <NavLink to="/products">Products</NavLink>
         <NavLink to="/" className="mx-5">
           About Us
         </NavLink>

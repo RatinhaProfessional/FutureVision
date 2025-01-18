@@ -8,6 +8,9 @@ import ContentTable from "./components/contentTable";
 import NewIn from "./components/newIn";
 import FrameLab from "./components/FrameLab";
 import OurVision from "./components/OurVision";
+import ContentTableTwo from "./components/contentTable2";
+import Products from "./components/products";
+import ProductsIntro from "./components/productsIntro";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +27,17 @@ const router = createBrowserRouter([
             <FrameLab />
 
             <OurVision />
+          </>
+        ),
+      },
+      {
+        path: "products",
+        element: (
+          <>
+            <ProductsIntro />
+            <ContentTableTwo />
+            <NewIn />
+            <Products />
           </>
         ),
       },
