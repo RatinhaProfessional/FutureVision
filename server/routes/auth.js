@@ -5,6 +5,7 @@ import user from "../models/user.js";
 import { regValidation, logValidation } from "../validation.js";
 
 const router = express.Router();
+const userCollection = db.collection("users");
 
 //POST /api/user/register
 router.post("/register", async (req, res) => {
@@ -41,7 +42,7 @@ router.post("/register", async (req, res) => {
     });
   
     try {
-      const savedUser = await userObject.save();
+      const savedUser = await userCollection.insertOne(userObject);
       res.json({ error: null, data: savedUser._id });
     } catch (error) {
       res.status(400).json({ error });
