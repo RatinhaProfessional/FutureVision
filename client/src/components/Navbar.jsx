@@ -1,9 +1,13 @@
 import { NavLink } from "react-router-dom";
+import { useContext } from 'react';
 import Logo from "./logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faShoppingBag } from "@fortawesome/free-solid-svg-icons";
+import { AuthContext } from "../context/AuthContext";
 
 export default function Navbar() {
+  const { authToken } = useContext(AuthContext);
+
   return (
     <nav className="flex flex-row flex-nowrap items-center px-[3.125rem] py-5 z-[20] sticky top-0 bg-stone-950">
       <NavLink to="/" className="basis-1/3">
@@ -17,7 +21,7 @@ export default function Navbar() {
         <NavLink to="/">Contact</NavLink>
       </div>
       <div className="basis-1/3 flex justify-end">
-        <NavLink to="/login">
+        <NavLink to={authToken ? "/account" : "/login"}>
           <FontAwesomeIcon icon={faUser} />
         </NavLink>
 

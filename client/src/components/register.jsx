@@ -11,8 +11,17 @@ export default function Register() {
   const [password, setPassword] = useState();
   const navigate = useNavigate();
 
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email regex
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!validateEmail(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
     axios
       .post("https://futurevision-backend2.onrender.com/users/register", {
         name,
@@ -22,14 +31,14 @@ export default function Register() {
       .then((result) => {
         console.log(result);
         navigate("/login");
-        alert("Registered!")
+        alert("Registered!");
       })
       .catch((err) => console.log(err));
   };
   return (
     <section className="grid grid-cols-2 grid-rows-1 mx-52 mt-40">
       <div>
-      <div className="w-full h-full overflow-visible">
+        <div className="w-full h-full overflow-visible">
           <Canvas camera={{ position: [0.0, 0.0, 8.0] }}>
             <Blob />
           </Canvas>

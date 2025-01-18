@@ -13,6 +13,7 @@ import Products from "./components/products";
 import ProductsIntro from "./components/productsIntro";
 import Register from "./components/register";
 import LogIn from "./components/logIn";
+import Account from "./components/account";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,14 @@ const router = createBrowserRouter([
         element: (
           <>
             <Register />
+          </>
+        ),
+      },
+      {
+        path: "account",
+        element: (
+          <>
+            <Account />
           </>
         ),
       },

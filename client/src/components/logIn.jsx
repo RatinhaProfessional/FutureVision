@@ -18,6 +18,7 @@ export default function LogIn() {
             if (result.data && result.data.data && result.data.data.token) {
                 alert("Logged in!");
                 localStorage.setItem("auth-token", result.data.data.token);
+                setAuthToken(result.data.data.token);
                 navigate("/");
             }else{
                 navigate("/register")
