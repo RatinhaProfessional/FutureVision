@@ -3,6 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import user from "../models/user.js";
 import { regValidation, logValidation } from "../validation.js";
+import db from "../db/connection.js";
 
 const router = express.Router();
 const userCollection = db.collection("users");
