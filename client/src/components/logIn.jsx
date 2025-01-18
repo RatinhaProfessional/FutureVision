@@ -1,31 +1,35 @@
-import { Link } from "react-router-dom";
 import React, { useState } from "react";
-import axios from "axios";
+import { Link } from "react-router-dom";
+import axios from 'axios'
 import { useNavigate } from "react-router-dom";
 import Blob from "./blob";
 import { Canvas } from "@react-three/fiber";
 
-export default function Register() {
-  const [name, setName] = useState();
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
-  const navigate = useNavigate();
+export default function LogIn() {
+    const [email, setEmail] = useState()
+    const [password, setPassword] = useState()
+    const navigate = useNavigate()
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    axios
-      .post("https://futurevision-backend2.onrender.com/users/register", {
-        name,
-        email,
-        password,
-      })
-      .then((result) => {
-        console.log(result);
-        navigate("/login");
-        alert("Registered!")
-      })
-      .catch((err) => console.log(err));
-  };
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post("https://futurevision-backend2.onrender.com/users/login", { email, password })
+        .then(result => {
+            console.log(result)
+            if (result.data && result.data.data && result.data.data.token) {
+                alert("Logged in!");
+                localStorage.setItem("auth-token", result.data.data.token);
+                navigate("/");
+            }else{
+                navigate("/register")
+                alert("You are not registered to this service")
+
+            }
+       
+        })
+        .catch(err => console.log(err))
+    }
+
+
   return (
     <section className="grid grid-cols-2 grid-rows-1 mx-52 mt-40">
       <div>
@@ -36,21 +40,8 @@ export default function Register() {
         </div>
       </div>
       <div className="flex-col justify-center align-center">
-        <h2 className="text-4xl font-header text-center mb-5">Sign Up</h2>
+        <h2 className="text-4xl font-header text-center mb-5">Log In</h2>
         <form onSubmit={handleSubmit} className="justify-items-center">
-          <div className="mb-5">
-            <label htmlFor="name" className=" mr-5">
-              Name
-            </label>
-            <input
-              type="text"
-              placeholder="Enter Name"
-              autoComplete="off"
-              name="name"
-              className="bg-transparent"
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
           <div className="mb-5">
             <label htmlFor="email" className=" mr-5">
               Email
@@ -77,13 +68,13 @@ export default function Register() {
             />
           </div>
           <button type="submit" className="uppercase font-bold">
-            Sign Up
+            Log in
           </button>
         </form>
         <div className="justify-items-center">
-          <p className="mt-10">Already have an account?</p>
-          <Link to="/login" className="mt-5 uppercase font-bold">
-            Login
+          <p className="mt-10">Don't have an account yet?</p>
+          <Link to="/register" className="mt-5 uppercase font-bold">
+          Sign Up
           </Link>
         </div>
       </div>

@@ -12,6 +12,7 @@ import ContentTableTwo from "./components/contentTable2";
 import Products from "./components/products";
 import ProductsIntro from "./components/productsIntro";
 import Register from "./components/register";
+import LogIn from "./components/logIn";
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,7 @@ const router = createBrowserRouter([
         path: "login",
         element: (
           <>
+          <LogIn/>
           </>
         ),
       },

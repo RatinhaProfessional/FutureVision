@@ -17,7 +17,7 @@ export default function Navbar() {
         <NavLink to="/">Contact</NavLink>
       </div>
       <div className="basis-1/3 flex justify-end">
-        <NavLink to="/register">
+        <NavLink to="/login">
           <FontAwesomeIcon icon={faUser} />
         </NavLink>
 
