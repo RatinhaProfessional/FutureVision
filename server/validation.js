@@ -16,7 +16,7 @@ const regValidation = (data) => {
     const schema = Joi.object(
         {
             name: Joi.string().max(255).required(),
-            email: Joi.string().max(255).required(),
+            email: Joi.string().email().max(255).required(),
             password: Joi.string().min(8).max(255).required(),
         });
 

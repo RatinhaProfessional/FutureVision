@@ -47,6 +47,7 @@ export default function Register() {
               placeholder="Enter Name"
               autoComplete="off"
               name="name"
+              required
               className="bg-transparent"
               onChange={(e) => setName(e.target.value)}
             />
@@ -60,6 +61,7 @@ export default function Register() {
               placeholder="Enter Email"
               autoComplete="off"
               name="email"
+              required
               className="bg-transparent"
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -72,6 +74,7 @@ export default function Register() {
               type="password"
               placeholder="Enter Password"
               name="password"
+              required
               className="bg-transparent"
               onChange={(e) => setPassword(e.target.value)}
             />
